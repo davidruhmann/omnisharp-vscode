@@ -148,6 +148,11 @@ export class CSharpConfigurationProvider implements vscode.DebugConfigurationPro
         return config;
     }
 
+    resolveDebugConfigurationWithSubstitutedVariables(folder: vscode.WorkspaceFolder | undefined, config: vscode.DebugConfiguration, token?: vscode.CancellationToken): vscode.ProviderResult<vscode.DebugConfiguration> {
+
+        return config;
+    }
+
     /**
 	 * Try to add all missing attributes to the debug configuration being launched.
 	 */
